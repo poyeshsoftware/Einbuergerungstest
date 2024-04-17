@@ -1,7 +1,11 @@
 <template>
   <div>
     <h2>{{ question.text }}</h2>
-    <answers :options="question.options" @answer="handleAnswer"/>
+    <answers
+        :options="question.options"
+        :correctOption="question.correctOption"
+        @answer="handleAnswer"
+    />
   </div>
 </template>
 
@@ -10,14 +14,20 @@ import {useQuizStore} from '@/stores/quizStore';
 import Answers from './Answers.vue';
 
 export default {
-  components: {Answers},
+  components: {
+    Answers
+  },
   props: ['question'],
   methods: {
     handleAnswer(option) {
       const isCorrect = option === this.question.correctOption;
       const store = useQuizStore();
-      store.answerQuestion(option, isCorrect);
-      store.nextQuestion();
+      if (isCorrect) {
+        store.answerQuestion(option, isCorrect);
+        setTimeout(() => {
+          store.nextQuestion();
+        }, 1000);  // Wait 1 second then move to the next question if the answer is correct
+      } // Do not automatically advance if the answer is incorrect
     }
   }
 }
