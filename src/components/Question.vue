@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>{{ question.text }}</h2>
+  <div class="flex flex-col mb-4">
+    <h2 class="text-lg text-gray-800 mb-2">{{ question.text }}</h2>
     <answers
         :options="question.options"
         :correctOption="question.correctOption"
