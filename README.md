@@ -1,29 +1,26 @@
-# Einbuergerungstest
+# Einbürgerungstest Germany Bavaria
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+This is a Vue.js application designed to help users prepare for the Einbürgerungstest in Bavaria, Germany. The application provides a set of questions and answers to aid in studying for the test.
 
 ## Project Setup
 
-```sh
-npm install
-```
+To set up the project on your local machine, follow these steps:
 
-### Compile and Hot-Reload for Development
+1. Clone the repository to your local machine using `git clone <repository-url>`.
+2. Navigate to the project directory using `cd <project-directory>`.
+3. Install the necessary dependencies using `npm install`.
+4. Start the development server using `npm run dev`.
 
-```sh
-npm run dev
-```
+## Usage
 
-### Compile and Minify for Production
+Once the server is running, you can access the application by navigating to `http://localhost:5000` (or whatever port you have configured) in your web browser.
 
-```sh
-npm run build
-```
+The application presents a series of questions related to the Einbürgerungstest. Select an answer for each question and proceed to the next one using the "Next" button. Your score is calculated based on your responses.
+
+## Contributing
+
+Contributions are welcome! Please read the contributing guidelines before making any changes.
+
+## License
+
+This project is licensed under the terms of the MIT license.
