@@ -5,7 +5,7 @@ import {fileURLToPath, URL} from 'url'
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
-        outDir: 'dist/admin/',
+        outDir: 'dist/',
         assetsDir: 'assets/'
     },
     plugins: [vue()],
