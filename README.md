@@ -2,6 +2,8 @@
 
 This is a Vue.js application designed to help users prepare for the Einbürgerungstest in Bavaria, Germany. The application provides a set of questions and answers to aid in studying for the test.
 
+### Visit the project [here](https://poyeshsoftware.github.io/Einbuergerungstest/).
+
 ## Project Setup
 
 To set up the project on your local machine, follow these steps:
