@@ -905,7 +905,7 @@ export const useQuizStore = defineStore('quiz', {
             },
             {
                 id: 46,
-                text : "Wen kann man als Bürger / Bürgerin in Deutschland nicht direkt wählen?",
+                text: "Wen kann man als Bürger / Bürgerin in Deutschland nicht direkt wählen?",
                 text_en: "Who can't you vote for directly as a citizen in Germany?",
                 options: [
                     "Abgeordnete des EU-Parlaments",
