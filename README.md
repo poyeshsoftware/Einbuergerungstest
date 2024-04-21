@@ -30,8 +30,10 @@ This project is licensed under the terms of the MIT license.
 ## Git push to Github Pages Process
 
 1. Run `npm run build` to generate the production build.
-2. Run `git subtree push --prefix dist origin gh-pages` to push the `dist` directory to the `gh-pages` branch on GitHub.
-3. Or Split the subtree into a new branch `git subtree split --prefix=dist -b temp-branch-for-gh-pages` and 
-4. and force push the temporary branch to the remote gh-pages repository `git push origin temp-branch-for-gh-pages:gh-pages --force`
-5. Delete the temporary branch `git branch -D temp-branch-for-gh-pages`
-6. Access the application at `https://<username>.github.io/<repository-name>`.
+2. Run `git add dist -f` to add the `dist` directory to the repository.
+3. Run `git commit -m "Add dist subtree for GitHub Pages deployment"` to commit the changes.
+4. Run `git subtree push --prefix dist origin gh-pages` to push the `dist` directory to the `gh-pages` branch on GitHub.
+5. Or Split the subtree into a new branch `git subtree split --prefix=dist -b temp-branch-for-gh-pages` and 
+6. and force push the temporary branch to the remote gh-pages repository `git push origin temp-branch-for-gh-pages:gh-pages --force`
+7. Delete the temporary branch `git branch -D temp-branch-for-gh-pages`
+8. Access the application at `https://<username>.github.io/<repository-name>`.
