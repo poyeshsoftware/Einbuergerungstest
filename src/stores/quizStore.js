@@ -803,9 +803,247 @@ export const useQuizStore = defineStore('quiz', {
                 correctNumber: 4,
                 image: null
             },
-            /*
-     Next question:
-     */
+            {
+                id: 41,
+                text: "Was bedeutet die Abkürzung CDU in Deutschland?",
+                text_en: "What does the abbreviation CDU mean in Germany?",
+                options: [
+                    "Christliche Delegierte Union",
+                    "Christlicher Deutscher Umweltschutz",
+                    "Christlich Demokratische Union",
+                    "Christlicher Dienst für Unterhaltung"
+                ],
+                options_en: [
+                    "Christian Delegates Union",
+                    "Christian German Environmental Protection",
+                    "Christian Democratic Union",
+                    "Christian Service for Entertainment"
+                ],
+                correctOption: "Christlich Demokratische Union",
+                correctNumber: 3,
+                image: null
+            },
+            {
+                id: 42,
+                text: "Mit welchen Worten beginnt die deutsche Nationalhymne?",
+                text_en: "With which words does the German national anthem begin?",
+                options: [
+                    "Völker, hört die Signale...",
+                    "Einigkeit und Recht und Freiheit ...",
+                    "Freude schöner Götterfunken ...",
+                    "Deutschland einig Vaterland."
+                ],
+                options_en: [
+                    "People, hear the signals...",
+                    "Unity and justice and freedom ...",
+                    "Joy, beautiful spark of the gods ...",
+                    "Germany, united fatherland."
+                ],
+                correctOption: "Einigkeit und Recht und Freiheit ...",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 43,
+                text: "Warum gibt es in einer Demokratie mehr als eine Partei?",
+                text_en: "Why are there more than one party in a democracy?",
+                options: [
+                    "damit Bestechung in der Politik begrenzt wird",
+                    "um politische Demonstrationen zu verhindern",
+                    "um wirtschaftlichen Wettbewerb anzuregen",
+                    "weil dadurch die unterschiedlichen Meinungen der Bürger und Bürgerinnen vertreten werden"
+                ],
+                options_en: [
+                    "to limit bribery in politics",
+                    "to prevent political demonstrations",
+                    "to encourage economic competition",
+                    "because this represents the different opinions of the citizens"
+                ],
+                correctOption: "weil dadurch die unterschiedlichen Meinungen der Bürger und Bürgerinnen vertreten werden",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 44,
+                text: "Wer beschließt in Deutschland ein neues Gesetz?",
+                text_en: "Who decides on a new law in Germany?",
+                options: [
+                    "die Regierung",
+                    "das Parlament",
+                    "die Gerichte",
+                    "die Polizei"
+                ],
+                options_en: [
+                    "the government",
+                    "the parliament",
+                    "the courts",
+                    "the police"
+                ],
+                correctOption: "das Parlament",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 45,
+                text: "Wann kann in Deutschland eine Partei verboten werden?",
+                text_en: "When can a party be banned in Germany?",
+                options: [
+                    "wenn ihr Wahlkampf zu teuer ist",
+                    "wenn sie gegen die Verfassung kämpft",
+                    "wenn sie Kritik am Staatsoberhaupt äußert",
+                    "wenn ihr Programm eine neue Richtung vorschlägt"
+                ],
+                options_en: [
+                    "if their election campaign is too expensive",
+                    "if they fight against the constitution",
+                    "if they criticize the head of state",
+                    "if their program proposes a new direction"
+                ],
+                correctOption: "wenn sie gegen die Verfassung kämpft",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 46,
+                text : "Wen kann man als Bürger / Bürgerin in Deutschland nicht direkt wählen?",
+                text_en: "Who can't you vote for directly as a citizen in Germany?",
+                options: [
+                    "Abgeordnete des EU-Parlaments",
+                    "den Bundespräsidenten / die Bundespräsidentin",
+                    "Landtagsabgeordnete",
+                    "Bundestagsabgeordnete"
+                ],
+                options_en: [
+                    "Members of the European Parliament",
+                    "the Federal President",
+                    "State parliament deputies",
+                    "Members of the Bundestag"
+                ],
+                correctOption: "den Bundespräsidenten / die Bundespräsidentin",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 47,
+                text: "Zu welcher Versicherung gehört die Pflegeversicherung?",
+                text_en: "Which insurance does long-term care insurance belong to?",
+                options: [
+                    "Sozialversicherung",
+                    "Unfallversicherung",
+                    "Hausratversicherung",
+                    "Haftpflicht- und Feuerversicherung"
+                ],
+                options_en: [
+                    "Social security",
+                    "Accident insurance",
+                    "Household insurance",
+                    "Liability and fire insurance"
+                ],
+                correctOption: "Sozialversicherung",
+                correctNumber: 1,
+                image: null
+            },
+            {
+                id: 48,
+                text: "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört dazu?",
+                text_en: "The German state has many tasks. Which task belongs to it?",
+                options: [
+                    "Er baut Straßen und Schulen.",
+                    "Er verkauft Lebensmittel und Kleidung.",
+                    "Er versorgt die Einwohner und Einwohnerinnen kostenlos mit",
+                    "Er produziert Autos und Busse."
+                ],
+                options_en: [
+                    "He builds roads and schools.",
+                    "He sells food and clothing.",
+                    "He supplies the residents free of charge",
+                    "He produces cars and buses."
+                ],
+                correctOption: "Er baut Straßen und Schulen.",
+                correctNumber: 1,
+                image: null
+            },
+            {
+                id: 49,
+                text: "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört nicht dazu?",
+                text_en: "The German state has many tasks. Which task does not belong to it?",
+                options: [
+                    "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+                    "Er zahlt Kindergeld.",
+                    "Er unterstützt Museen.",
+                    "Er fördert Sportler und Sportlerinnen."
+                ],
+                options_en: [
+                    "He pays for all citizens' vacations.",
+                    "He pays child benefit.",
+                    "He supports museums.",
+                    "He promotes athletes."
+                ],
+                correctOption: "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+                correctNumber: 1,
+                image: null
+            },
+            {
+                id: 50,
+                text: "Welches Organ gehört nicht zu den Verfassungsorganen Deutschlands?",
+                text_en: "Which organ does not belong to the constitutional organs of Germany?",
+                options: [
+                    "der Bundesrat",
+                    "der Bundespräsident / die Bundespräsidentin",
+                    "die Bürgerversammlung",
+                    "die Regierung"
+                ],
+                options_en: [
+                    "the Federal Council",
+                    "the Federal President",
+                    "the citizens' assembly",
+                    "the government"
+                ],
+                correctOption: "die Bürgerversammlung",
+                correctNumber: 3,
+                image: null
+            },
+            {
+                id: 51,
+                text: "Wer bestimmt in Deutschland die Schulpolitik?",
+                text_en: "Who determines the school policy in Germany?",
+                options: [
+                    "die Lehrer und Lehrerinnen",
+                    "die Bundesländer",
+                    "das Familienministerium",
+                    "die Universitäten"
+                ],
+                options_en: [
+                    "the teachers",
+                    "the federal states",
+                    "the family ministry",
+                    "the universities"
+                ],
+                correctOption: "die Bundesländer",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 52,
+                text: "Die Wirtschaftsform in Deutschland nennt man ...",
+                text_en: "The economic system in Germany is called ...",
+                options: [
+                    "freie Zentralwirtschaft.",
+                    "soziale Marktwirtschaft.",
+                    "gelenkte Zentralwirtschaft.",
+                    "Planwirtschaft."
+                ],
+                options_en: [
+                    "free central economy.",
+                    "social market economy.",
+                    "controlled central economy.",
+                    "planned economy."
+                ],
+                correctOption: "soziale Marktwirtschaft.",
+                correctNumber: 2,
+                image: null
+            }
+
         ],
         currentQuestionIndex: 0,
         userAnswers: [],  // Array of user responses
