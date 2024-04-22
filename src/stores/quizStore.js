@@ -441,7 +441,7 @@ export const useQuizStore = defineStore('quiz', {
                 ],
                 correctOption: "1",
                 correctNumber: 1,
-                image: "images/22.png"
+                image: "22.png"
             },
             {
                 id: 23,
@@ -1042,8 +1042,510 @@ export const useQuizStore = defineStore('quiz', {
                 correctOption: "soziale Marktwirtschaft.",
                 correctNumber: 2,
                 image: null
-            }
-
+            },
+            {
+                id: 53,
+                text: "Zu einem demokratischen Rechtsstaat gehört es nicht, dass ...",
+                text_en: "A democratic constitutional state does not include ...",
+                options: [
+                    "Menschen sich kritisch über die Regierung äußern können.",
+                    "Bürger friedlich demonstrieren gehen dürfen.",
+                    "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+                    "jemand ein Verbrechen begeht und deshalb verhaftet wird."
+                ],
+                options_en: [
+                    "People can criticize the government.",
+                    "Citizens are allowed to go on peaceful demonstrations.",
+                    "People are arrested by a private police force without reason.",
+                    "someone commits a crime and is therefore arrested."
+                ],
+                correctOption: "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+                correctNumber: 3,
+                image: null
+            },
+            {
+                id: 54,
+                text: "Was bedeutet „Volkssouveränität\"? Alle Staatsgewalt geht vom ...",
+                text_en: "What does „popular sovereignty\" mean? All state power comes from ...",
+                options: [
+                    "Volke aus.",
+                    "Bundestag aus.",
+                    "preußischen König aus.",
+                    "Bundesverfassungsgericht aus."
+                ],
+                options_en: [
+                    "People.",
+                    "Bundestag.",
+                    "Prussian king.",
+                    "Federal Constitutional Court."
+                ],
+                correctOption: "Volke aus.",
+                correctNumber: 1,
+                image: null
+            },
+            {
+                id: 55,
+                text: "Was bedeutet „Rechtsstaat\" in Deutschland?",
+                text_en: "What does „constitutional state\" mean in Germany?",
+                options: [
+                    "Der Staat hat Recht.",
+                    "Es gibt nur rechte Parteien.",
+                    "Die Bürger und Bürgerinnen entscheiden über Gesetze.",
+                    "Der Staat muss die Gesetze einhalten."
+                ],
+                options_en: [
+                    "The state is right.",
+                    "There are only right-wing parties.",
+                    "The citizens decide on laws.",
+                    "The state must comply with the laws."
+                ],
+                correctOption: "Der Staat muss die Gesetze einhalten.",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 56,
+                text: "Was ist keine staatliche Gewalt in Deutschland?",
+                text_en: "What is not a state power in Germany?",
+                options: [
+                    "Legislative",
+                    "Judikative",
+                    "Exekutive",
+                    "Direktive"
+                ],
+                options_en: [
+                    "Legislative",
+                    "Judiciary",
+                    "Executive",
+                    "Directive"
+                ],
+                correctOption: "Direktive",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 57,
+                text: "Was zeigt dieses Bild?",
+                text_en: "What does this picture show?",
+                options: [
+                    "den Bundestagssitz in Berlin",
+                    "das Bundesverfassungsgericht in Karlsruhe",
+                    "das Bundesratsgebäude in Berlin",
+                    "das Bundeskanzleramt in Berlin"
+                ],
+                options_en: [
+                    "the seat of the Bundestag in Berlin",
+                    "the Federal Constitutional Court in Karlsruhe",
+                    "the Bundesrat building in Berlin",
+                    "the Federal Chancellery in Berlin"
+                ],
+                correctOption: "das Bundeskanzleramt in Berlin",
+                correctNumber: 4,
+                image: "57.png"
+            },
+            {
+                id: 58,
+                text: "Welches Amt gehört in Deutschland zur Gemeindeverwaltung?",
+                text_en: "Which office belongs to the municipal administration in Germany?",
+                options: [
+                    "Pfarramt",
+                    "Ordnungsamt",
+                    "Finanzamt",
+                    "Auswärtiges Amt"
+                ],
+                options_en: [
+                    "Parish office",
+                    "Order office",
+                    "Tax office",
+                    "Foreign Office"
+                ],
+                correctOption: "Ordnungsamt",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 59,
+                text: "Wer wird meistens zum Präsidenten/ zur Präsidentin des Deutschen Bundestages gewählt?",
+                text_en: "Who is usually elected President of the German Bundestag?",
+                options: [
+                    "der / die älteste Abgeordnete im Parlament",
+                    "der Ministerpräsident / die Ministerpräsidentin des größten Bundeslandes",
+                    "ein ehemaliger Bundeskanzler / eine ehemalige Bundeskanzlerin",
+                    "ein Abgeordneter / eine Abgeordnete der stärksten Fraktion"
+                ],
+                options_en: [
+                    "the oldest member of parliament",
+                    "the Prime Minister of the largest federal state",
+                    "a former Chancellor",
+                    "a member of the strongest faction"
+                ],
+                correctOption: "ein Abgeordneter / eine Abgeordnete der stärksten Fraktion",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 60,
+                text: "Wer ernennt in Deutschland die Minister / die Ministerinnen der Bundesregierung?",
+                text_en: "Who appoints the ministers of the federal government in Germany?",
+                options: [
+                    "der Präsident / die Präsidentin des Bundesverfassungsgerichtes",
+                    "der Bundespräsident / die Bundespräsidentin",
+                    "der Bundesratspräsident / die Bundesratspräsidentin",
+                    "der Bundestagspräsident / die Bundestagspräsidentin"
+                ],
+                options_en: [
+                    "the President of the Federal Constitutional Court",
+                    "the Federal President",
+                    "the President of the Bundesrat",
+                    "the President of the Bundestag"
+                ],
+                correctOption: "der Bundespräsident / die Bundespräsidentin",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 61,
+                text: "Welche Parteien wurden in Deutschland 2007 zur Partei „Die Linke\"?",
+                text_en: "Which parties were merged in Germany in 2007 to form the party „Die Linke\"?",
+                options: [
+                    "CDU und SSW",
+                    "CSU und FDP",
+                    "Bündnis 90/Die Grünen und SPD",
+                    "PDS und WASG"
+                ],
+                options_en: [
+                    "CDU and SSW",
+                    "CSU and FDP",
+                    "Bündnis 90/Die Grünen and SPD",
+                    "PDS and WASG"
+                ],
+                correctOption: "PDS und WASG",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 62,
+                text: "In Deutschland gehören der Bundestag und der Bundesrat zur...",
+                text_en: "In Germany, the Bundestag and the Bundesrat belong to...",
+                options: [
+                    "Exekutive",
+                    "Legislative",
+                    "Direktive",
+                    "Judikative"
+                ],
+                options_en: [
+                    "Executive",
+                    "Legislative",
+                    "Directive",
+                    "Judiciary"
+                ],
+                correctOption: "Legislative",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 63,
+                text: "Was bedeutet „Volkssouveränität\"?",
+                text_en: "What does „popular sovereignty\" mean?",
+                options: [
+                    "Der König / die Königin herrscht über das Volk.",
+                    "Das Bundesverfassungsgericht steht über der Verfassung.",
+                    "Die Interessenverbände üben die Souveränität zusammen mit der Regierung aus.",
+                    "Die Staatsgewalt geht vom Volke aus."
+                ],
+                options_en: [
+                    "The king / queen rules over the people.",
+                    "The Federal Constitutional Court is above the constitution.",
+                    "The interest groups exercise sovereignty together with the government.",
+                    "State power comes from the people."
+                ],
+                correctOption: "Die Staatsgewalt geht vom Volke aus.",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 64,
+                text: "Wenn das Parlament eines deutschen Bundeslandes gewählt wird, nennt man das ...",
+                text_en: "When the parliament of a German federal state is elected, it is called...",
+                options: [
+                    "Kommunalwahl",
+                    "Landtagswahl",
+                    "Europawahl",
+                    "Bundestagswahl"
+                ],
+                options_en: [
+                    "Local election",
+                    "State election",
+                    "European election",
+                    "Federal election"
+                ],
+                correctOption: "Landtagswahl",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 65,
+                text: "Was gehört in Deutschland nicht zur Exekutive?",
+                text_en: "What does not belong to the executive in Germany?",
+                options: [
+                    "die Polizei",
+                    "die Gerichte",
+                    "das Finanzamt",
+                    "die Ministerien"
+                ],
+                options_en: [
+                    "the police",
+                    "the courts",
+                    "the tax office",
+                    "the ministries"
+                ],
+                correctOption: "die Gerichte",
+                correctNumber: 2,
+                image: null
+            },
+            {
+                id: 66,
+                text: "Die Bundesrepublik Deutschland ist heute gegliedert in ...",
+                text_en: "The Federal Republic of Germany is now divided into ...",
+                options: [
+                    "vier Besatzungszonen.",
+                    "einen Oststaat und einen Weststaat.",
+                    "16 Kantone.",
+                    "Bund, Länder und Kommunen."
+                ],
+                options_en: [
+                    "four occupation zones.",
+                    "an East State and a West State.",
+                    "16 cantons.",
+                    "Federation, states and municipalities."
+                ],
+                correctOption: "Bund, Länder und Kommunen.",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 67,
+                text: "Es gehört nicht zu den Aufgaben des Deutschen Bundestages, ...",
+                text_en: "It is not one of the tasks of the German Bundestag, ...",
+                options: [
+                    "Gesetze zu entwerfen.",
+                    "die Bundesregierung zu kontrollieren.",
+                    "den Bundeskanzler / die Bundeskanzlerin zu wählen.",
+                    "das Bundeskabinett zu bilden."
+                ],
+                options_en: [
+                    "to draft laws.",
+                    "to control the federal government.",
+                    "to elect the Federal Chancellor.",
+                    "to form the Federal Cabinet."
+                ],
+                correctOption: "Gesetze zu entwerfen.",
+                correctNumber: 1,
+                image: null
+            },
+            {
+                id: 68,
+                text: "Wer schrieb den Text zur deutschen Nationalhymne?",
+                text_en: "Who wrote the text for the German national anthem?",
+                options: [
+                    "Friedrich von Schiller",
+                    "Clemens Brentano",
+                    "Johann Wolfgang von Goethe",
+                    "Heinrich Hoffmann von Fallersleben"
+                ],
+                options_en: [
+                    "Friedrich von Schiller",
+                    "Clemens Brentano",
+                    "Johann Wolfgang von Goethe",
+                    "Heinrich Hoffmann von Fallersleben"
+                ],
+                correctOption: "Heinrich Hoffmann von Fallersleben",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 69,
+                text: "Was ist in Deutschland vor allem eine Aufgabe der Bundesländer?",
+                text_en: "What is primarily a task of the federal states in Germany?",
+                options: [
+                    "Verteidigungspolitik",
+                    "Außenpolitik",
+                    "Wirtschaftspolitik",
+                    "Schulpolitik"
+                ],
+                options_en: [
+                    "Defense policy",
+                    "Foreign policy",
+                    "Economic policy",
+                    "School policy"
+                ],
+                correctOption: "Schulpolitik",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 70,
+                text: "Warum kontrolliert der Staat in Deutschland das Schulwesen?",
+                text_en: "Why does the state control the school system in Germany?",
+                options: [
+                    "weil es in Deutschland nur staatliche Schulen gibt",
+                    "weil alle Schüler und Schülerinnen einen Schulabschluss haben müssen",
+                    "weil es in den Bundesländern verschiedene Schulen gibt",
+                    "weil es nach dem Grundgesetz seine Aufgabe ist"
+                ],
+                options_en: [
+                    "because there are only state schools in Germany",
+                    "because all students must have a high school diploma",
+                    "because there are different schools in the federal states",
+                    "because it is its task according to the Basic Law"
+                ],
+                correctOption: "weil es nach dem Grundgesetz seine Aufgabe ist",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 71,
+                text: "Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?",
+                text_en: "The Federal Republic of Germany has a three-tier administrative structure. What is the name of the lowest political level?",
+                options: [
+                    "Stadträte",
+                    "Landräte",
+                    "Gemeinden",
+                    "Bezirksämter"
+                ],
+                options_en: [
+                    "City councils",
+                    "District administrators",
+                    "Municipalities",
+                    "District offices"
+                ],
+                correctOption: "Gemeinden",
+                correctNumber: 3,
+                image: null
+            },
+            {
+                id: 72,
+                text: "Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten/ der deutschen Bundespräsidentin?",
+                text_en: "The German Federal President Gustav Heinemann gives Helmut Schmidt the appointment certificate for German Federal Chancellor in 1974. What are the tasks of the German Federal President?",
+                options: [
+                    "Er / Sie führt die Regierungsgeschäfte.",
+                    "Er / Sie kontrolliert die Regierungspartei.",
+                    "Er / Sie wählt die Minister / Ministerinnen aus.",
+                    "Er / Sie schlägt den Kanzler / die Kanzlerin zur Wahl vor."
+                ],
+                options_en: [
+                    "He / She conducts government business.",
+                    "He / She controls the government party.",
+                    "He / She selects the ministers.",
+                    "He / She proposes the Chancellor for election."
+                ],
+                correctOption: "Er / Sie schlägt den Kanzler / die Kanzlerin zur Wahl vor.",
+                correctNumber: 4,
+                image: "72.png"
+            },
+            {
+                id: 73,
+                text: "Wo hält sich der deutsche Bundeskanzler / die deutsche Bundeskanzlerin am häufigsten auf? Am häufigsten ist er / sie ...",
+                text_en: "Where does the German Federal Chancellor / the German Federal Chancellor most often stay? Most often he / she...",
+                options: [
+                    "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+                    "auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.",
+                    "auf Schloss Bellevue, dem Amtssitz des Bundespräsidenten / der Bundespräsidentin, um Staatsgäste zu empfangen.",
+                    "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden."
+                ],
+                options_en: [
+                    "in Bonn, because the Federal Chancellery and the Bundestag are located there.",
+                    "at Schloss Meseberg, the guest house of the federal government, to receive state guests.",
+                    "at Schloss Bellevue, the official residence of the Federal President, to receive state guests.",
+                    "in Berlin, because the Federal Chancellery and the Bundestag are located there."
+                ],
+                correctOption: "in Berlin, because the Federal Chancellery and the Bundestag are located there.",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 74,
+                text: "Wie heißt der jetzige Bundeskanzier / die jetzige Bundeskanzierin von Deutschland?",
+                text_en: "What is the name of the current Federal Chancellor of Germany?",
+                options: [
+                    "Gerhard Schröder",
+                    "Angela Merkel",
+                    "Franziska Giffey",
+                    "Olaf Scholz"
+                ],
+                options_en: [
+                    "Gerhard Schröder",
+                    "Angela Merkel",
+                    "Franziska Giffey",
+                    "Olaf Scholz"
+                ],
+                correctOption: "Olaf Scholz",
+                correctNumber: 4,
+                image: null
+            },
+            {
+                id: 75,
+                text: "Die beiden größten Fraktionen im Deutschen Bundestag heißen zurzeit ...",
+                text_en: "The two largest factions in the German Bundestag are currently called...",
+                options: [
+                    "CDU/CSU und SPD",
+                    "Die Linke und Bündnis 90/Die Grünen",
+                    "FDP und SPD",
+                    "Die Linke und FDP"
+                ],
+                options_en: [
+                    "CDU/CSU and SPD",
+                    "The Left and Alliance 90/The Greens",
+                    "FDP and SPD",
+                    "The Left and FDP"
+                ],
+                correctOption: "CDU/CSU und SPD",
+                correctNumber: 1,
+                image: null
+            },
+            {
+                id: 76,
+                text: "Wie heißt das Parlament für ganz Deutschland?",
+                text_en: "What is the name of the parliament for all of Germany?",
+                options: [
+                    "Bundesversammlung",
+                    "Volkskammer",
+                    "Bundestag",
+                    "Bundesgerichtshof"
+                ],
+                options_en: [
+                    "Federal Assembly",
+                    "People's Chamber",
+                    "Bundestag",
+                    "Federal Court of Justice"
+                ],
+                correctOption: "Bundestag",
+                correctNumber: 3,
+                image: null
+            },
+            {
+                id: 77,
+                text: "Wie heißt Deutschlands heutiges Staatsoberhaupt?",
+                text_en: "What is the name of Germany's current head of state?",
+                options: [
+                    "Bärbel Bas",
+                    "Bodo Ramelow",
+                    "Joachim Gauck",
+                    "Frank-Walter Steinmeier"
+                ],
+                options_en: [
+                    "Bärbel Bas",
+                    "Bodo Ramelow",
+                    "Joachim Gauck",
+                    "Frank-Walter Steinmeier"
+                ],
+                correctOption: "Frank-Walter Steinmeier",
+                correctNumber: 4,
+                image: null
+            },
+            /*
+        Next question:
+        */
         ],
         currentQuestionIndex: 0,
         userAnswers: [],  // Array of user responses
