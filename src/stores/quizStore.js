@@ -2,6 +2,7 @@ import {defineStore} from 'pinia';
 
 export const useQuizStore = defineStore('quiz', {
     state: () => ({
+        currentLanguage: 'de',
         questions: [
             {
                 id: 1,
@@ -21,7 +22,7 @@ export const useQuizStore = defineStore('quiz', {
                 ],
                 correctOption: "hier Meinungsfreiheit gilt.",
                 correctNumber: 4,
-                image: null
+                image: '@/assets/images/questions/22.png'
             },
             {
                 id: 2,
@@ -1141,7 +1142,7 @@ export const useQuizStore = defineStore('quiz', {
                 ],
                 correctOption: "das Bundeskanzleramt in Berlin",
                 correctNumber: 4,
-                image: "57.png"
+                image: `@/assets/images/questions/57.png`
             },
             {
                 id: 58,
@@ -1441,7 +1442,7 @@ export const useQuizStore = defineStore('quiz', {
                 ],
                 correctOption: "Er / Sie schlägt den Kanzler / die Kanzlerin zur Wahl vor.",
                 correctNumber: 4,
-                image: "72.png"
+                image: `@/assets/images/questions/72.png`
             },
             {
                 id: 73,
@@ -1552,6 +1553,9 @@ export const useQuizStore = defineStore('quiz', {
         score: 0
     }),
     actions: {
+        toggleLanguage() {
+            this.currentLanguage = (this.currentLanguage === 'de' ? 'en' : 'de');
+        },
         loadQuestions(questions) {
             this.questions = questions;
             this.questions.forEach(question => {

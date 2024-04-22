@@ -1,9 +1,11 @@
 <template>
   <div class="flex flex-col mb-4">
-    <h2 class="text-lg text-gray-800 mb-2">{{ question.text }}</h2>
+    <h2 class="text-lg text-gray-800 mb-2">{{ questionText }}</h2>
     <answers
         :options="question.options"
+        :options_en="question.options_en"
         :correctOption="question.correctOption"
+        :correctNumber="question.correctNumber"
         @answer="handleAnswer"
     />
   </div>
@@ -18,6 +20,20 @@ export default {
     Answers
   },
   props: ['question'],
+  computed: {
+    displayedQuestion() {
+      const store = useQuizStore();
+      return store.currentLanguage === 'de' ? this.question.text : this.question.text_en;
+    },
+    displayedOptions() {
+      const store = useQuizStore();
+      return store.currentLanguage === 'de' ? this.question.options : this.question.options_en;
+    },
+    questionText() {
+      const store = useQuizStore();
+      return store.currentLanguage === 'de' ? this.question.text : this.question.text_en;
+    }
+  },
   methods: {
     handleAnswer(option) {
       const isCorrect = option === this.question.correctOption;

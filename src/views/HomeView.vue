@@ -13,6 +13,12 @@
                 :disabled="isLastQuestion">Next Question
         </button>
       </div>
+      <div class="flex justify-between mt-4 controls">
+        <button
+            class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded-md"
+            @click="toggleLanguage">Language: {{ getCurrentLanguage }}</button>
+        <!-- Existing template content -->
+      </div>
       <div class="score">
         Current Score: {{ score }}
       </div>
@@ -44,9 +50,17 @@ export default {
     isLastQuestion() {
       const store = useQuizStore();
       return store.currentQuestionIndex === store.questions.length - 1;
-    }
+    },
+    getCurrentLanguage() {
+      const store = useQuizStore();
+      return store.currentLanguage === 'de' ? 'Deutsch' : 'English';
+    },
   },
   methods: {
+    toggleLanguage() {
+      const store = useQuizStore();
+      store.toggleLanguage();
+    },
     nextQuestion() {
       const store = useQuizStore();
       if (!this.isLastQuestion) {

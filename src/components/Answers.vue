@@ -1,7 +1,7 @@
 <template>
   <div class="answers">
     <ul>
-      <li v-for="(option, index) in options" :key="index"
+      <li v-for="(option, index) in displayedOptions" :key="index"
           :class="{
                    'correct': option === correctOption && selectedOption !== null,
                    'incorrect': option !== correctOption && selectedOption !== null,
@@ -16,18 +16,27 @@
 </template>
 
 <script>
+import { useQuizStore } from '@/stores/quizStore';
 export default {
   props: {
     options: Array,
-    correctOption: String
+    options_en: Array,
+    correctOption: String,
+    correctNumber: Number
   },
   data() {
     return {
+      selectedOptionIndex: null,
       selectedOption: null
     };
   },
+  computed: {
+    displayedOptions() {
+      const store = useQuizStore();
+      return store.currentLanguage === 'de' ? this.options : this.options_en;
+    }
+  },
   watch: {
-    // Watch for changes in the options, which indicate a new question is being loaded
     options: {
       immediate: true,
       handler(newVal, oldVal) {
@@ -36,7 +45,14 @@ export default {
         }
       }
     },
-    // Optionally, watch the correctOption if needed
+    options_en: {
+      immediate: true,
+      handler(newVal, oldVal) {
+        if (newVal !== oldVal) {
+          this.resetSelection();
+        }
+      }
+    },
     correctOption(newVal, oldVal) {
       if (newVal !== oldVal) {
         this.resetSelection();
@@ -46,6 +62,7 @@ export default {
   methods: {
     selectOption(option) {
       this.selectedOption = option;
+      this.selectedOptionIndex = this.displayedOptions.indexOf(option);
       let delay = option === this.correctOption ? 1000 : 3000; // Longer delay if incorrect
       setTimeout(() => {
         this.$emit('answer', option);
